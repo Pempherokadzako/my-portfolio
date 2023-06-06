@@ -1,28 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head style="text-align:center;" JIVER NEWS>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio project</title>
+<!Doctype html>
+<html>
+<head><title>BIOGRAPHY</title>
+
 </head>
+<style>
+	*{
+  font-family: Poppins;
+  color: white;
+  background-color:#241443;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0px auto;
+}
+	.myslides{
+		align-content: center;
+	}
+.forms{
+	   width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+  }
+
+</style>
 
 <body>
-    <nav>
-        <a href="home.html">HOME</a> 
-        <a href="services.html">SERVICES</a> 
-        <a href="contacts.html">CONTACTS</a> 
-            </nav>
+  <header>
+  <nav>
+  	 <div class="INTRODUCTION">
+  	 	<H2><B> JIVER DESIGNS CO.</B></H2>
+  	 	
+  	 </div>
+		
+			<a href="index.html">HOME</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="learn.html">SKILLS</a>
+			<a href="contact.html">CONTACTS</a>
+			 	<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+		
+	</nav>
+</header>
+	<style>
+.mySlides {display:none;
+align-content: center
+}
+</style>
 
-    <h1><b>LATEST NEWS</b> </h1>
-    <P style="text-decoration: darkred;">MZUZU UNIVERSITY STUDENT DEVELOPS A MULTI MILLION APP</P>
-<BR>
-    <p>A Second year student at mzuzu university who goes by the name pemphero kadzako has developed a multi million dollar application which by using it one can be able to monitor your health stats  </p>
-<br><p>in the latest talks with him ,he said with this application one can be able to know your current body situations as to know if one is at risk of getting sick from certain diseases such as heart problems ,high blood pressure and certain lung diseases </p>
-<p>with one knowing such things a personal will know if there is need to seek medical attention or not</p>
-<p>this application is installed on smart watch which measures ones vitals such as heart beats ,blood pressure ,body sugar content and many more</p>
-<p>below is his photo</p>
-<img src="pempho.jpg" width="800" height="1200"/>
 
+<div class="JIVER" style="margin: 50 " align="center">
+  <img class="mySlides" src="house_arch.jpg" style="width:50% height:25%">
+ 
+  <img class="mySlides" src="house3.jpg" style="width:100% height:40%">
+  <img class="mySlides" src="house5.jpg" style="width:100% height:40%">
+  <form>
+ 
+  </form>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    {
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change imageevery 2 seconds
+}
+
+    
+}
+</script>
+<p style="text-align: center;">JIVER DESIGNS CO is a company that specialises in designing and building houses and apartments<br>it was first established in 2017 and as of now it has it has completed over 20 projects which some are in the projects section<br>Our goal is to be known as one of the best in this designing and building industry</p>
+<HR>
+<p> TO ENQUIRE FOR OUR SERVICES PLEASE FILL OUT THE DETAILS BELOW</p>
+ 
+ <br>
+<form class="forms">
+<label for="fname">FULL NAME</label><br>
+ <input type="text" name="fname" width="40%" required="required"><br>
+ <label for="mail">EMAIL</label><br>
+ <input type="mail" name="email" width="40%" required="required"><br>
+ <label for="comment">COMMENT</label><br>
+ <input type="text" name="comment" width="40%" required="required"><br><BR>
+
+<input type="submit" value="SUBMIT">
+</form>
 </body>
+
+
+
 </html>
